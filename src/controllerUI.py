@@ -79,6 +79,18 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
+        self.pushButton_forward.clicked.connect(MainWindow.move_forward)
+        self.pushButton_backward.clicked.connect(MainWindow.move_backward)
+        self.pushButton_left.clicked.connect(MainWindow.move_left)
+        self.pushButton_right.clicked.connect(MainWindow.move_right)
+        self.pushButton_initialize.clicked.connect(MainWindow.initialize_body_shape)
+        self.pushButton_steps.clicked.connect(MainWindow.up_stairs)
+        self.radioButton_cameraStatus.clicked.connect(MainWindow.camera_status)
+        self.radioButton_bodyStatus_rect.clicked.connect(MainWindow.transform_to_rect)
+        self.radioButton_bodyStatus_highLeg.clicked.connect(MainWindow.transform_to_highLeg)
+        self.radioButton_bodyStatus_hexagon.clicked.connect(MainWindow.transform_to_hexagon)
+        self.radioButton_bodyStatus_crab.clicked.connect(MainWindow.transform_to_crab)
+        self.radioButton_bodyStatus_upDown.clicked.connect(MainWindow.transform_to_upDown)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):

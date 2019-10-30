@@ -197,23 +197,215 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_forward</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>move_forward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>146</x>
+     <y>572</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>216</x>
+     <y>548</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_backward</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>move_backward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>128</x>
+     <y>697</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>706</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_left</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>move_left()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>37</x>
+     <y>613</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>37</x>
+     <y>676</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_right</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>move_right()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>225</x>
+     <y>640</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>640</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_initialize</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>initialize_body_shape()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>116</x>
+     <y>623</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>239</x>
+     <y>594</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_steps</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>up_stairs()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>401</x>
+     <y>565</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>383</x>
+     <y>531</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_cameraStatus</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>camera_status()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>122</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>522</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_bodyStatus_rect</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>transform_to_rect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>575</x>
+     <y>557</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>524</x>
+     <y>524</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_bodyStatus_highLeg</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>transform_to_highLeg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>495</x>
+     <y>613</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>474</x>
+     <y>610</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_bodyStatus_hexagon</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>transform_to_hexagon()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>490</x>
+     <y>656</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>476</x>
+     <y>655</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_bodyStatus_crab</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>transform_to_crab()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>493</x>
+     <y>699</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>477</x>
+     <y>697</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_bodyStatus_upDown</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>transform_to_upDown()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>493</x>
+     <y>750</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>740</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
  <slots>
-  <slot>btnOpenCamera_Clicked()</slot>
-  <slot>btnSibian_Clicked()</slot>
-  <slot>btnBianbao_Clicked()</slot>
-  <slot>btnForward_Clicked()</slot>
-  <slot>btnBackward_Clicked()</slot>
-  <slot>btnLeft_Clicked()</slot>
-  <slot>btnRight_Clicked()</slot>
-  <slot>btnInitialize_Clicked()</slot>
-  <slot>btnUpSteps_Clicked()</slot>
-  <slot>btnHighLeg_Clicked()</slot>
-  <slot>btnHexagon_Clicked()</slot>
-  <slot>btnCrab_Clicked()</slot>
+  <slot>move_forward()</slot>
+  <slot>move_backward()</slot>
+  <slot>move_left()</slot>
+  <slot>move_right()</slot>
+  <slot>initialize_body_shape()</slot>
+  <slot>up_stairs()</slot>
+  <slot>camera_status()</slot>
+  <slot>transform_to_rect()</slot>
+  <slot>transform_to_highLeg()</slot>
+  <slot>transform_to_hexagon()</slot>
+  <slot>transform_to_crab()</slot>
+  <slot>transform_to_upDown()</slot>
  </slots>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_2"/>
  </buttongroups>
 </ui>
